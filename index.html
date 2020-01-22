@@ -31,7 +31,7 @@
 
 <body>
   <div id="app">
-    <v-app id="inspire">
+    <v-app id="inspire" style="padding:0px;">
 
 
     <v-navigation-drawer
@@ -89,8 +89,9 @@
 
   <v-app-bar
   app
-  color="indigo"
+  class="info"
   dark
+  hide-on-scroll
   
 >
   <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -98,6 +99,13 @@
 </v-app-bar>
 
 <v-content>
+  <v-toolbar-title>
+    <span class=" font-weight-black">鼠來寶</span>
+    <span>MingJing</span>
+  </v-toolbar-title>
+
+
+
   <v-item-group>
     <p class ="blue lighten-4 red--text text--darken-4">Hey IseeU <code>&lt;code&gt;</code></p>
     <h1 class="display-3">Big-TEXT</h1>
@@ -107,12 +115,27 @@
   <v-item-group>
     <v-btn class="pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
     <v-btn depressed class=" pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
-    <v-btn flat class=" pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
+    <v-btn  class=" pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
+    <v-btn  class=" black lighten-3 white--text text--darken-4 hidden-md-and-up">md-up</v-btn>
+    <v-btn  class=" white lighten-3 black--text text--darken-4 hidden-md-and-down">md-down</v-btn>
   </v-item-group>
-</v-content>
 
+  
+
+</v-content>
+<v-bottom-navigation
+  
+  gray
+  shift
+  bottom
+>
+<v-btn>
+  asd
+</v-btn>
+</v-bottom-navigation>
     </v-app>
   </div>
+
 
 
 

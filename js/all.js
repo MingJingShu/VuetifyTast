@@ -11,7 +11,16 @@ $(document).ready(function(){
 
       })//data
     })//Vue
-
+    
+    Vue.use(Vuetify,{
+      iconfont:'md',
+      theme:{
+        primary:'#9652ff',
+        sucesss:'#3cd1c2',
+        info:'#ffaa2c',
+        error:'#f83e70'
+      }
+    })//VueUse
 
 });//total
 //el = element
@@ -19,17 +28,17 @@ $(document).ready(function(){
 //data change content
 
 // =>
-const array1 =[3,0,6,7,8];
-const map1 = array1.map(x => x * 2);
-console.log('map1 ='+map1);
+// const array1 =[3,0,6,7,8];
+// const map1 = array1.map(x => x * 2);
+// console.log('map1 ='+map1);
 
 
-const materials = [
-  'Hydrogen',
-  'Helium',
-  'Lithium',
-  'Beryllium'
-];
+// const materials = [
+//   'Hydrogen',
+//   'Helium',
+//   'Lithium',
+//   'Beryllium'
+// ];
 
-console.log(materials.map(material => material.length));
+// console.log(materials.map(material => material.length));
 // expected output: Array [8, 6, 7, 9]
