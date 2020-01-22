@@ -91,10 +91,25 @@
   app
   color="indigo"
   dark
+  
 >
   <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
   <v-toolbar-title>鼠再哈囉</v-toolbar-title>
 </v-app-bar>
+
+<v-content>
+  <v-item-group>
+    <p class ="blue lighten-4 red--text text--darken-4">Hey IseeU <code>&lt;code&gt;</code></p>
+    <h1 class="display-3">Big-TEXT</h1>
+    <p class="headline">this is Headline</p>
+    <p class="subheading font-weight-bold">Weight Subheading</p>
+  </v-item-group>
+  <v-item-group>
+    <v-btn class="pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
+    <v-btn depressed class=" pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
+    <v-btn flat class=" pink lighten-3 white--text text--darken-4">ClickMe</v-btn>
+  </v-item-group>
+</v-content>
 
     </v-app>
   </div>
